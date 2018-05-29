@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="input-group input-group-lg">
+    <span class="input-group-addon" id="basic1">@</span>
+    <input type="text" class="form-control" placeholder="用户名" aria-describedby="basic1">
+</div>
+<div class="input-group input-group-sm">
+    <span class="input-group-addon" id="basic2">$</span>
+    <input type="text" class="form-control" placeholder="金额" aria-describedby="basic2">
+    <span class="input-group-addon">.00</span>
+</div>
+
+
+<!--整合式输入框组 整合了下拉按钮菜单-->
+<div class="input-group">
+    <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            搜索
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Google</a></li>
+            <li><a href="#">百度</a></li>
+            <li><a href="#">搜狗</a></li>
+            <li class="divider"></li>
+            <li><a href="#">人民搜索</a></li>
+        </ul>
+    </div>
+    <input type="text" class="form-control" placeholder="输入搜索内容">
+</div>
+</body>
+</html>
