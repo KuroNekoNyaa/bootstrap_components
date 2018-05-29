@@ -49,7 +49,7 @@ show hidden
 第一步添加glyphicon <br>
 第二步 找到想要的字体图标的class名  <br>
 更多图标 [请戳](http://v3.bootcss.com/components/)<br>
-如果想给字体图标加上超链接 只需在外面嵌套一层a标签 例如<a><span class="glyphicon glyphicon-alert"></span>链接</a>   <br>
+如果想给字体图标加上超链接 只需在外面嵌套一层a标签 例如```<a><span class="glyphicon glyphicon-alert"></span>链接</a>```   <br>
 如果想在button上显示字体图标 例如 <br>
 ```
 <button type="button" class="btn btn-primary">
@@ -63,14 +63,14 @@ show hidden
 tips： role属性是为了增强语义化 <br>
 
 第一步最外层的div添加dropdown样式 <br>
-第二步button添加dropdown-toggle样式 设置id  并且添加data-toggle="dropdown" <br>
+第二步button添加dropdown-toggle样式 设置id  并且添加```data-toggle="dropdown"``` <br>
 第三步 给选项的ul添加dropdown-menu样式 并且添加aria-labelledby="刚才设置的id" <br>
 
 ####  如果想给选项添加一个不可点击的标题项 
-可以添加        <li class="dropdown-header">标题</li>  <br>
+可以添加       ``` <li class="dropdown-header">标题</li>```  <br>
 
 #### 如果想在选项中添加分割线 
-可以添加         <li class="divider"></li>   <br>
+可以添加         ```<li class="divider"></li> ```  <br>
 
 #### 如果某个选项禁选
 直接在li添加disabled类名
@@ -86,7 +86,7 @@ tips： role属性是为了增强语义化 <br>
 添加 btn-group-vertical 
 
 #### 如果想用按钮组实现复选框
-第一步 在最外层div额外添加一个data-toggle="buttons"
+第一步 在最外层div额外添加一个```data-toggle="buttons"```<br>
 第二步     
 ```
 <label class="btn btn-primary active">
@@ -139,7 +139,7 @@ div class="input-group">
     <input type="text" class="form-control" placeholder="输入搜索内容">
 </div>
 ```
-主要区别在于添加了一个<div class="input-group-btn"> <br>
+主要区别在于添加了一个```<div class="input-group-btn">``` <br>
 
 ![preview](img/输入框组.png) <br>
 
@@ -212,7 +212,7 @@ badge
 
 ### 模态窗
 需要注意的：<br>
-第一点 button 按钮的data-toggle="modal" data-target="#id"<br>
+第一点 button 按钮的```data-toggle="modal" data-target="#id"```<br>
 第二点 总体结构modal > modal-dialog> modal-content >modal-header + modal-body + modal-footer <br>
 第三点 关闭按钮一定要添加 data-dismiss="modal" 才能实现点击后关闭模态窗 <br>
 第四点 控制淡入淡出效果 需要在父元素添加 fade类名 <br>
